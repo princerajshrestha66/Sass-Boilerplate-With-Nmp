@@ -1,0 +1,19 @@
+.row {
+    max-width: $grid-width;
+    margin:  0 auto;
+    &:not(:last-child) {
+        margin-bottom: $grid-vertical;
+    }
+    @include clearfix;
+}
+[class^="col-"]{
+    @include BoxSizing;
+    float: left;
+    padding: 0 $grid-horizontal;
+}
+
+@for $i from 1 through $gridCount {
+   .col-#{$i} {
+       width: 100% / $gridCount * $i;
+   }
+}

@@ -1,0 +1,45 @@
+
+@keyframes BodyMoveIn {
+    0% {
+        opacity:0; 
+        transform:translateX(-100px);
+    }
+    80% {
+        -webkit-transform: translateX(1rem);
+           -moz-transform: translateX(1rem);
+            -ms-transform: translateX(1rem);
+             -o-transform: translateX(1rem);
+                transform: translateX(1rem);
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+           -moz-transform: translateX(0);
+            -ms-transform: translateX(0);
+             -o-transform: translateX(0);
+                transform: translateX(0);
+    }
+}
+
+@keyframes BodyMoveInButton {
+    0% {
+        opacity:0;
+        -webkit-transform: translateY(0.3rem);
+           -moz-transform: translateY(0.3rem);
+            -ms-transform: translateY(0.3rem);
+             -o-transform: translateY(0.3rem);
+                transform: translateY(0.3rem);
+    }
+    
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0 );
+           -moz-transform: translateY(0 );
+            -ms-transform: translateY(0 );
+             -o-transform: translateY(0 );
+                transform: translateY(0 );
+    }
+}

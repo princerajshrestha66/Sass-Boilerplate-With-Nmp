@@ -1,0 +1,23 @@
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;  
+    vertical-align: middle;
+    font-weight: bold;
+    background-image: linear-gradient(to right, $color-primary-light,  $color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 0.5s ease-in;
+}
+
+.heading-tertiary {
+    font-size: $defaultFontSize;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: $defaultFontSize;
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+
+}
